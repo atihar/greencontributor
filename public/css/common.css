@@ -1,0 +1,419 @@
+/*
+    Common CSS for Green Contributor
+ */
+:root {
+	--shadow: 0px 0px 8px #c4c4c4;
+	--shadow-image: 0px 0px 12px #c4c4c4;
+	--primary: #009970;
+	--secondary: #ff9838;
+}
+
+* {
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+	overflow-x: hidden;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+}
+a {
+	text-decoration: none;
+}
+
+.flex {
+	display: flex;
+}
+.flex-column {
+	display: flex;
+	flex-direction: column;
+}
+.justify-center {
+	justify-content: center;
+}
+.justify-between {
+	justify-content: space-between;
+}
+.justify-around {
+	justify-content: space-around;
+}
+.align-center {
+	align-items: center;
+}
+.align-end {
+	align-items: flex-end;
+}
+.capitalize {
+	text-transform: capitalize;
+}
+.color-primary {
+	color: #009970;
+}
+.fixed-top {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 9;
+}
+.w-100 {
+	width: 100% !important;
+}
+.flex-grow {
+	flex-grow: 1;
+}
+.text-center {
+	text-align: center;
+}
+.container {
+	width: 80%;
+	margin: auto;
+}
+.p-3 { padding: 2rem; }
+
+/* Navbar */
+.navbar-wrapper {
+	padding: 32px 10.5%;
+	background: rgba(0, 0, 0, 0);
+}
+.navbar {
+	padding: 16px;
+	background: #fff;
+	border-radius: 0 0 25px 25px;
+	font-size: 14px;
+	font-weight: 500;
+	transition: border-radius 0.5s;
+}
+.navbar a {
+	text-transform: uppercase;
+	color: #36343a;
+	margin: 0 8px;
+}
+.navbar a.active {
+	color: #009970;
+}
+a.navbar-logo {
+	font-size: 18px;
+	font-weight: 500;
+	color: #009970;
+	text-transform: capitalize;
+}
+.navbar-logo img {
+	max-width: 70px;
+}
+.call-to-action {
+	padding: 13.5px 22.5px;
+	background: #009970;
+	color: #ffffff !important;
+	border-radius: 0 0 15px 0;
+	margin-left: 45px !important;
+}
+.stretched {
+	padding: 0;
+	transition: padding 0.5s;
+}
+.stretched .navbar {
+	padding: 16px 10.5%;
+	border-radius: 0;
+}
+.navbar-wrapper {
+	transition: padding 0.5s;
+}
+.slider-overlay {
+	position: absolute;
+	width: 100%;
+	height: 170px;
+	left: 0;
+	right: 0;
+	opacity: 0.3;
+	bottom: 0;
+	background: linear-gradient(to bottom, transparent, white);
+}
+
+/* Section Titles */
+.section-title {
+	font-size: 3rem;
+	text-transform: uppercase;
+	color: #36343a;
+	margin-top: 80px;
+	margin-bottom: 32px;
+	text-align: center;
+}
+
+/* Event Display System */
+#event-display-seystem h3 {
+	font-size: 1rem;
+	margin-top: 0;
+	margin-bottom: 2rem;
+}
+#current-time div {
+	padding: 1rem;
+	background: #2a9055;
+	color: white;
+	font-size: 1rem;
+	margin: 0 1rem;
+	border-radius: 15px;
+}
+table {
+	margin-top: 2rem;
+	border-collapse: collapse;
+	width: 100%;
+	text-align: center;
+	font-size: 1rem;
+}
+#event-display-seystem th {
+	font-size: 1.2rem;
+}
+
+/* Time in cities */
+.time-box {
+	border-radius: 1.1rem;
+	box-shadow: var(--shadow);
+	padding: 1rem;
+	text-align: center;
+	margin: 1rem;
+}
+
+/* Intro Grid */
+.intro-grid {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 1rem;
+	grid-auto-rows: minmax(400px, auto);
+}
+.intro-grid video,
+.video-slider-element video {
+	box-shadow: var(--shadow-image);
+	border-radius: 12px;
+	overflow: hidden;
+}
+video {
+	width: 100%;
+	height: auto;
+}
+
+
+/* About Us */
+#about-us {
+	display: grid;
+	padding-bottom: 80px;
+	background: url('../img/about-background.png');
+	background-size: cover;
+	background-position: center;
+}
+
+#about-us .section-title,
+#about-us p {
+	color: #ffffff;
+}
+
+/* Product Slider */
+#green-products img {
+	width: 100%;
+	height: auto;
+}
+
+.product-slider-element {
+	margin: 0.4rem;
+	border-radius: 12px;
+	overflow: hidden;
+	box-shadow: var(--shadow);
+}
+
+.product-slider-description {
+	padding: 0.5rem;
+}
+
+.product-slider-description h3 {
+	margin: 0;
+	color: var(--primary);
+}
+
+.product-buttons {
+	padding: 1rem 0.5rem;
+}
+
+.product-buttons .price {
+	color: var(--primary);
+}
+
+.cart-btn {
+	background-color: var(--secondary);
+	color: #ffffff;
+	padding: 0.3rem 1rem 0.3rem 0.9rem;
+	border-radius: 8px;
+}
+
+.buy-btn {
+	background-color: var(--primary);
+	color: #ffffff;
+	padding: 0.3rem 1rem;
+	border-radius: 8px;
+	text-transform: capitalize;
+}
+
+/*#testimonials {*/
+/*	padding-bottom: 80px;*/
+/*}*/
+/*.testimonials-slider-element {*/
+/*	border-radius: 12px;*/
+/*	border: 1px solid var(--primary);*/
+/*	padding: 1rem;*/
+/*}*/
+/*.testimonials-slider-element .testimonials-grid {*/
+/*	display: grid;*/
+/*	align-items: center;*/
+/*	grid-template-columns: max-content;*/
+/*	grid-template-areas: 'user-photo user-name' 'user-photo user-details';*/
+/*}*/
+/*.testimonials-slider-element img {*/
+/*	grid-area: user-photo;*/
+/*	max-width: 70px;*/
+/*	max-height: 70px;*/
+/*	margin: 0;*/
+/*}*/
+/*.testimonials-slider-element h3 {*/
+/*	grid-area: user-name;*/
+/*	margin: 0;*/
+/*}*/
+/*.testimonials-slider-element p.author-details {*/
+/*	grid-area: user-details;*/
+/*	margin: 0;*/
+/*}*/
+
+/*#testimonials .slick-list {*/
+/*	overflow: visible;*/
+/*}*/
+
+/*.testimonials-slider-element {*/
+/*	margin: 1rem;*/
+/*}*/
+
+/* Footer */
+footer {
+	padding: 80px 0;
+	background: #f5f5f5;
+}
+
+h2.footer-logo {
+	color: var(--primary);
+	margin: 0;
+	font-size: 48px;
+	text-transform: uppercase;
+}
+.footer-grid {
+	display: grid;
+	grid-template-columns: 2fr 1fr 1fr;
+}
+.link-group-1 {
+	justify-self: end;
+}
+.link-group-2 {
+	justify-self: end;
+}
+#copyright {
+	height: 64px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+#copyright p {
+	margin: 0;
+}
+.text-right { text-align: right; }
+
+#customer-details {
+    width: 50%;
+}
+#customer-details table { text-align: left; }
+
+
+/*amare file pathaile ami eikhane korum.. pera hoitese anydesk e */
+
+
+/*.table {*/
+/*    width: 750px;*/
+/*    border-collapse: collapse;*/
+/*    margin:50px auto;*/
+/*}*/
+
+/*!* Zebra striping *!*/
+/*.table > tr:nth-of-type(odd) {*/
+/*    background: #eee;*/
+/*}*/
+
+/*.table > th {*/
+/*    background: #3498db;*/
+/*    color: white;*/
+/*    font-weight: bold;*/
+/*}*/
+/*.table > td, .table> th {*/
+/*    padding: 10px;*/
+/*    border: 1px solid #ccc;*/
+/*    text-align: left;*/
+/*    font-size: 14px;*/
+/*}*/
+
+/*modal style*/
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 20vh;/* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    border-radius: 15px;
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+button.greenBtn {
+    background: #0e5b44;
+    color: #ffffff;
+    padding: 5px 25px;
+}
+
+#pay {
+    padding: 0.5rem 1.5rem;
+    border-radius: 4px;
+    background: #0e5b44;
+    color: white;
+}
+.order-status {
+    text-transform: uppercase;
+    text-align: center;
+}
